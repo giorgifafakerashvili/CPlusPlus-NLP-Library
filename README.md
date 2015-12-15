@@ -1,3 +1,3 @@
-# C-NLP-Library
+# C Plus Plus-NLP-Library
 Natural language processing library for C++ it's inspired by python NLTK library
 
