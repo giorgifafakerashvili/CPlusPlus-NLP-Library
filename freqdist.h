@@ -21,5 +21,14 @@ public:
 
   long long int& operator[](const std::string& word);
 
+  long long int camulative_frequencies(const std::vector<std::string>& words);
+
+  std::vector<std::string> hapexes() const;
+
+  std::vector<std::string> wordsByCount(const long long int& count);
+
+
+
+
 };
 

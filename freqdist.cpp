@@ -105,3 +105,36 @@ long long int& FreqDist::operator[](const std::string& word) {
 }
 
 
+
+long long int FreqDist::camulative_frequencies(const std::vector<std::string>& words) {
+  long long int counter = 0;
+
+  for(int i = 0; i < words.size(); i++) {
+    if(table[words[i]])
+      counter += table[words[i]];
+  }
+
+  return counter;
+}
+
+
+std::vector<std::string> FreqDist::hapexes() const {
+  std::vector<std::string> words;
+
+  for(std::map<std::string, long long>::const_iterator it = table.begin(); it != table.end(); it++) {
+    if(it->second == 1)
+      words.push_back(it->first);
+  }
+
+  return words;
+}
+
+std::vector<std::string> FreqDist::wordsByCount(const long long int& count) {
+  std::vector<std::string> words;
+
+  for(std::map<std::string, long long>::const_iterator it = table.begin(); it != table.end() ;it++) {
+    if(it->second == count) 
+      words.push_back(it->first);
+  }
+  return words;
+}

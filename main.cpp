@@ -82,47 +82,7 @@ public:
 
 int main() {
 
-  Tokenize tokens;
-  std::vector<std::string> words = tokens.CharTokenize("giorgi nini nini mari mari mari luka luka luka luka", ' ');
-
   
-  FreqDist freq(words);
-
-  std::vector<std::string> vec = freq.words();
-
-  for(int i = 0; i < vec.size(); i++) {
-    std::cout << vec[i] << " ";
-  }
-
-  std::cout << freq.count("giorgi") << std::endl;
-  std::cout << freq.count("nini") << std::endl;
-  std::cout << freq.count("mari") << std::endl;
-  
-
-  std::cout << std::endl << std::endl;
-
-  std::cout << freq << std::endl;
-
-
-  std::cout << std::endl << std::endl;
-
-  std::cout << freq["giorgi"] << std::endl;
-  std::cout << freq["luka"] << std::endl;
-
-  std::cout << freq["nothing"] << std::endl;
-
-  freq["giorgi"]++;
-
-  std::cout << freq["giorgi"] << std::endl;
-
-  freq["giorgi"] = 100;
-
-  std::cout << freq["giorgi"] << std::endl;
-
-  
-
-
-
   
 
 
