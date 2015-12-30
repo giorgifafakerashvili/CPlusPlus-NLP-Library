@@ -1,4 +1,4 @@
-std::ostream& operator<<(std::ostream& out, const std::vector<std::string>& words) {
+/*std::ostream& operator<<(std::ostream& out, const std::vector<std::string>& words) {
 	out << "[";
 
 	for(int i = 0; i < words.size(); i++) {
@@ -11,7 +11,9 @@ std::ostream& operator<<(std::ostream& out, const std::vector<std::string>& word
 
 	out << "]";
 }
+*/
 
+/*
 std::vector<std::string> split(const std::string& text, char tokenizer = ' ') {
   std::vector<std::string> vec;
 
@@ -33,7 +35,9 @@ std::vector<std::string> split(const std::string& text, char tokenizer = ' ') {
 
   return vec;
 }
+*/
 
+/*
 class Tokenize  {
 private:
   std::vector<std::string> words;
@@ -58,6 +62,8 @@ public:
     return split(text, delimiter);
   }
 
-};
+}; 
+
+*/
 
 
